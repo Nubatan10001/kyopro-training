@@ -1,20 +1,13 @@
-'''
-https://atcoder.jp/contests/abc411/tasks/abc411_a
+# https://atcoder.jp/contests/abc411/tasks/abc411_a
 
-問題文
-高橋君は、ある web サイトに設定するパスワードを、英小文字のみからなる文字列 
-P にしようと考えています。
-一方で、その web サイトのパスワードは長さ 
-L 以上の文字列である必要があります。
+def main():
+    L = int(input("必要な長さLを入力してください: "))
+    P = input("パスワード文字列Pを入力してください: ")
 
-P が長さの条件をみたすか、すなわち長さ 
-L 以上の文字列であるか判定してください。
+    if len(P) >= L:
+        print("Yes")
+    else:
+        print("No")
 
-制約
-P は英小文字のみからなる長さ 
-1 以上 
-100 以下の文字列
-1≤L≤100
-L は整数
-'''
-
+if __name__ == "__main__":
+    main()
